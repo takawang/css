@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flexbox cheatsheet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="dist/styles/main.css" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <div class="l-container">
+      <div class="subhead">Flex 容器</div>
+
+      <section class="set">
+        <h2 class="set__heading">display</h2>
+        <p class="set__notes">啟用 Flexbox，inline 或者 block</p>
+        <div class="set__items">
+          <div
+            class="item item--container-display-flex js-item"
+            data-code="display: flex;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">display: flex</h3>
+          </div>
+
+          <div
+            class="item item--container-display-inline-flex js-item"
+            data-code="display: inline-flex;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">display: inline-flex</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="set">
+        <h2 class="set__heading">flex-direction</h2>
+        <p class="set__notes">指定 Flex 主軸的方向</p>
+        <div class="set__items">
+          <div
+            class="item item--container-flex-direction-row js-item"
+            data-code="flex-direction: row;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              flex-direction: row (default)
+            </h3>
+          </div>
+
+          <div
+            class="item item--container-flex-direction-row-reverse js-item"
+            data-code="flex-direction: row-reverse;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              flex-direction: row-reverse
+            </h3>
+          </div>
+
+          <div
+            class="item item--container-flex-direction-column js-item"
+            data-code="flex-direction: column;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              flex-direction: column
+            </h3>
+          </div>
+
+          <div
+            class="item item--container-flex-direction-column-reverse js-item"
+            data-code="flex-direction: column-reverse;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              flex-direction: column-reverse
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="set">
+        <h2 class="set__heading">flex-wrap</h2>
+        <p class="set__notes">指定元素是否應該換行</p>
+        <div class="set__items">
+          <div
+            class="item item--container-flex-wrap-nowrap js-item"
+            data-code="flex-wrap: nowrap;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              flex-wrap: nowrap (default)
+            </h3>
+          </div>
+
+          <div
+            class="item item--container-flex-wrap-wrap js-item"
+            data-code="flex-wrap: wrap;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">flex-wrap: wrap</h3>
+          </div>
+
+          <div
+            class="item item--container-flex-wrap-wrap-reverse js-item"
+            data-code="flex-wrap: wrap-reverse;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              flex-wrap: wrap-reverse
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="set">
+        <h2 class="set__heading">justify-content</h2>
+        <p class="set__notes">在主軸上對齊元素</p>
+        <div class="set__items">
+          <div
+            class="item item--container-justify-content-flex-start js-item"
+            data-code="justify-content: flex-start;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              justify-content: flex-start (default)
+            </h3>
+          </div>
+
+          <div
+            class="item item--container-justify-content-flex-end js-item"
+            data-code="justify-content: flex-end;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              justify-content: flex-end
+            </h3>
+          </div>
+
+          <div
+            class="item item--container-justify-content-center js-item"
+            data-code="justify-content: center;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              justify-content: center
+            </h3>
+          </div>
+
+          <div
+            class="item item--container-justify-content-space-between js-item"
+            data-code="justify-content: space-between;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              justify-content: space-between
+            </h3>
+          </div>
+
+          <div
+            class="item item--container-justify-content-space-around js-item"
+            data-code="justify-content: space-around;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              justify-content: space-around
+            </h3>
+          </div>
+
+          <div
+            class="item item--container-justify-content-space-evenly js-item"
+            data-code="justify-content: space-evenly;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              justify-content: space-evenly
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="set">
+        <h2 class="set__heading">align-items</h2>
+        <p class="set__notes">決定元素在交叉軸上的對齊方式</p>
+        <div class="set__items">
+          <div
+            class="item item--container-align-items-flex-start js-item"
+            data-code="align-items: flex-start;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              align-items: flex-start
+            </h3>
+          </div>
+
+          <div
+            class="item item--container-align-items-flex-end js-item"
+            data-code="align-items: flex-end;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">align-items: flex-end</h3>
+          </div>
+
+          <div
+            class="item item--container-align-items-center js-item"
+            data-code="align-items: center;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">align-items: center</h3>
+          </div>
+
+          <div
+            class="item item--container-align-items-baseline js-item"
+            data-code="align-items: baseline;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">align-items: baseline</h3>
+          </div>
+
+          <div
+            class="item item--container-align-items-stretch js-item"
+            data-code="align-items: stretch;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              align-items: stretch (default)
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="set">
+        <h2 class="set__heading">align-content</h2>
+        <p class="set__notes">僅對多行內容有效 (flex-wrap: wrap)</p>
+        <div class="set__items">
+          <div
+            class="item item--container-align-content-flex-start js-item"
+            data-code="align-content: flex-start;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              align-content: flex-start
+            </h3>
+          </div>
+
+          <div
+            class="item item--container-align-content-flex-end js-item"
+            data-code="align-content: flex-end;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              align-content: flex-end
+            </h3>
+          </div>
+
+          <div
+            class="item item--container-align-content-center js-item"
+            data-code="align-content: center;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">align-content: center</h3>
+          </div>
+
+          <div
+            class="item item--container-align-content-space-between js-item"
+            data-code="align-content: space-between;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              align-content: space-between
+            </h3>
+          </div>
+
+          <div
+            class="item item--container-align-content-space-around js-item"
+            data-code="align-content: space-around;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              align-content: space-around
+            </h3>
+          </div>
+
+          <div
+            class="item item--container-align-content-stretch js-item"
+            data-code="align-content: stretch;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              align-content: stretch (default)
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <div class="subhead">Flex 元素</div>
+
+      <section class="set">
+        <h2 class="set__heading">flex-grow</h2>
+        <p class="set__notes">
+          控制元素在主軸上的伸展比例 (預設為 0)
+          <br />
+          值越大，元素在主軸上佔據的空間越多
+        </p>
+        <div class="set__items">
+          <div
+            class="item item--alt-child-colors-1 item--container-flex-grow-all-1 js-item"
+            data-code="flex-grow: 1;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              flex-grow: 1 (套用到所有元素)
+            </h3>
+          </div>
+        </div>
+        <div class="set__items">
+          <div
+            class="item item--alt-child-colors-1 item--container-flex-grow-all-unique js-item"
+            data-code="flex-grow: 1;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              flex-grow (1, 2, and 3)
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="set">
+        <h2 class="set__heading">flex-basis</h2>
+        <p class="set__notes">
+          控制元素在主軸上的初始大小 (預設為 auto)
+          <br />
+          此時元素將根據內容自動調整大小
+        </p>
+        <div class="set__items">
+          <div
+            class="item item--alt-child-colors-1 item--container-flex-basis-20-40 js-item"
+            data-code="flex-basis: 50%;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              第一個元素 20%, 第二個元素 40%
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="set">
+        <h2 class="set__heading">flex-shrink</h2>
+        <p class="set__notes">
+          控制元素在主軸上的收縮比例 (預設為1)
+          <br />
+          值越大，元素在主軸上收縮的比例越小
+        </p>
+        <div class="set__items">
+          <div
+            class="item item--alt-child-colors-1 item--container-flex-shrink-unique js-item"
+            data-code="flex-shrink: 1;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              都要 100% 寬，但第二個元素有 flex-shrink: 2 (只有在設定尺寸或
+              flex-basis 才真正有用)
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="set">
+        <h2 class="set__heading">order</h2>
+        <p class="set__notes">
+          設定每個元素出現的順序
+          <br />
+          <br />
+        </p>
+        <div class="set__items">
+          <div
+            class="item item--alt-child-colors-1 item--container-order js-item"
+            data-code="order: 1;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">order: integer</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="set">
+        <h2 class="set__heading">align-self</h2>
+        <p class="set__notes">設定單一元素的對齊方式</p>
+        <div class="set__items">
+          <div
+            class="item item--alt-child-colors-1 item--container-align-self-unique js-item"
+            data-code="align-self: flex-start;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              align-self: flex-start|flex-end|center|baseline|stretch
+            </h3>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="dist/scripts/common.bundle.js"></script>
+    <script defer src="dist/scripts/main.bundle.js"></script>
+  </body>
+</html>
