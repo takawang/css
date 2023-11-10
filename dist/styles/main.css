@@ -349,6 +349,11 @@ h1 {
   margin: 0.67em 0;
 }
 
+em {
+  color: gold;
+  /* font-family: 'Noto Sans TC', sans-serif; */
+}
+
 mark {
   background: #ff0;
   color: #000;
@@ -1414,6 +1419,32 @@ svg {
   width: 14.4rem;
   height: 33px;
   height: 3.3rem;
+}
+
+.footer {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 2;
+  letter-spacing: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inconsolata', monospace;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.footer > * + * {
+  margin-top: 14px;
+  margin-top: 1.4rem;
+}
+
+.footer p {
+  opacity: 0.6;
+}
+
+.footer a {
+  opacity: 1;
+  text-decoration: underline;
 }
 
 .item {

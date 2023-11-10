@@ -71,7 +71,8 @@
             </div>
 
             <h3 class="item__heading js-item-heading">
-              flex-direction: row (default)
+              flex-direction: row
+              <em>(預設)</em>
             </h3>
           </div>
 
@@ -149,7 +150,8 @@
             </div>
 
             <h3 class="item__heading js-item-heading">
-              flex-wrap: nowrap (default)
+              flex-wrap: nowrap
+              <em>(預設)</em>
             </h3>
           </div>
 
@@ -212,7 +214,8 @@
             </div>
 
             <h3 class="item__heading js-item-heading">
-              justify-content: flex-start (default)
+              justify-content: flex-start
+              <em>(預設)</em>
             </h3>
           </div>
 
@@ -258,6 +261,8 @@
 
             <h3 class="item__heading js-item-heading">
               justify-content: space-between
+              <br />
+              頭尾黏在邊緣，間距等寬
             </h3>
           </div>
 
@@ -273,6 +278,8 @@
 
             <h3 class="item__heading js-item-heading">
               justify-content: space-around
+              <br />
+              頭尾一半間距到邊緣，間距等寬
             </h3>
           </div>
 
@@ -288,6 +295,8 @@
 
             <h3 class="item__heading js-item-heading">
               justify-content: space-evenly
+              <br />
+              頭尾有間距，所有間距等寬
             </h3>
           </div>
         </div>
@@ -295,7 +304,11 @@
 
       <section class="set">
         <h2 class="set__heading">align-items</h2>
-        <p class="set__notes">決定元素在交叉軸上的對齊方式</p>
+        <p class="set__notes">
+          決定元素在交叉軸上的對齊方式
+          <br />
+          Flex 容器有設定高度才真正有用
+        </p>
         <div class="set__items">
           <div
             class="item item--container-align-items-flex-start js-item"
@@ -360,7 +373,11 @@
               <span class="item__child"></span>
             </div>
 
-            <h3 class="item__heading js-item-heading">align-items: baseline</h3>
+            <h3 class="item__heading js-item-heading">
+              align-items: baseline
+              <br />
+              將所有(高高低低)元素的基線對齊
+            </h3>
           </div>
 
           <div
@@ -377,7 +394,10 @@
             </div>
 
             <h3 class="item__heading js-item-heading">
-              align-items: stretch (default)
+              align-items: stretch
+              <em>(預設)</em>
+              <br />
+              填滿 Flex 容器全高
             </h3>
           </div>
         </div>
@@ -385,7 +405,11 @@
 
       <section class="set">
         <h2 class="set__heading">align-content</h2>
-        <p class="set__notes">僅對多行內容有效 (flex-wrap: wrap)</p>
+        <p class="set__notes">
+          控制多行之間在交叉軸的對齊方式
+          <br />
+          僅對多行內容有效 (wrap | wrap-reverse)
+        </p>
         <div class="set__items">
           <div
             class="item item--container-align-content-flex-start js-item"
@@ -513,7 +537,8 @@
             </div>
 
             <h3 class="item__heading js-item-heading">
-              align-content: stretch (default)
+              align-content: stretch
+              <em>(default)</em>
             </h3>
           </div>
         </div>
@@ -521,12 +546,42 @@
 
       <div class="subhead">Flex 元素</div>
 
+      <!-- flex-basis -->
+      <section class="set">
+        <h2 class="set__heading">flex-basis</h2>
+        <p class="set__notes">
+          控制元素在主軸上的初始大小
+          <br />
+          預設時元素將根據內容自動調整大小
+        </p>
+        <div class="set__items">
+          <div
+            class="item item--alt-child-colors-1 item--container-flex-basis-20-40 js-item"
+            data-code="flex-basis: 50%;"
+          >
+            <div class="item__container">
+              <span class="item__child"></span>
+              <span class="item__child"></span>
+            </div>
+
+            <h3 class="item__heading js-item-heading">
+              第一個元素 20%, 第二個元素 40%
+              <br />
+              flex-basis: 0|50px|50%|content
+              <em>(預設: auto)</em>
+              <br />
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- flex-grow -->
       <section class="set">
         <h2 class="set__heading">flex-grow</h2>
         <p class="set__notes">
-          控制元素在主軸上的伸展比例 (預設為 0)
+          控制元素在主軸上的伸展比例
           <br />
-          值越大，元素在主軸上佔據的空間越多
+          值越大，元素在主軸上佔的空間越多
         </p>
         <div class="set__items">
           <div
@@ -540,7 +595,11 @@
             </div>
 
             <h3 class="item__heading js-item-heading">
-              flex-grow: 1 (套用到所有元素)
+              flex-grow:
+              <strong>1</strong>
+              (套用到所有元素，幾乎忽視 flex-basis 限制)
+              <br />
+              <em>(預設: 0)</em>
             </h3>
           </div>
         </div>
@@ -562,36 +621,13 @@
         </div>
       </section>
 
-      <section class="set">
-        <h2 class="set__heading">flex-basis</h2>
-        <p class="set__notes">
-          控制元素在主軸上的初始大小 (預設為 auto)
-          <br />
-          此時元素將根據內容自動調整大小
-        </p>
-        <div class="set__items">
-          <div
-            class="item item--alt-child-colors-1 item--container-flex-basis-20-40 js-item"
-            data-code="flex-basis: 50%;"
-          >
-            <div class="item__container">
-              <span class="item__child"></span>
-              <span class="item__child"></span>
-            </div>
-
-            <h3 class="item__heading js-item-heading">
-              第一個元素 20%, 第二個元素 40%
-            </h3>
-          </div>
-        </div>
-      </section>
-
+      <!-- flex-shrink -->
       <section class="set">
         <h2 class="set__heading">flex-shrink</h2>
         <p class="set__notes">
-          控制元素在主軸上的收縮比例 (預設為1)
+          控制元素在主軸上的收縮比例
           <br />
-          值越大，元素在主軸上收縮的比例越小
+          值越大，元素在主軸的收縮比例越小
         </p>
         <div class="set__items">
           <div
@@ -604,18 +640,24 @@
             </div>
 
             <h3 class="item__heading js-item-heading">
-              都要 100% 寬，但第二個元素有 flex-shrink: 2 (只有在設定尺寸或
-              flex-basis 才真正有用)
+              只有在設定
+              <strong>尺寸</strong>
+              或設定
+              <strong>flex-basis</strong>
+              才真正有用
+              <em>(預設: 1)</em>
             </h3>
           </div>
         </div>
       </section>
 
+      <!-- order -->
       <section class="set">
         <h2 class="set__heading">order</h2>
         <p class="set__notes">
-          設定每個元素出現的順序
+          設定每個元素在主軸出現的順序
           <br />
+          數字越大越晚出現
           <br />
         </p>
         <div class="set__items">
@@ -632,14 +674,21 @@
               <span class="item__child"></span>
             </div>
 
-            <h3 class="item__heading js-item-heading">order: integer</h3>
+            <h3 class="item__heading js-item-heading">
+              order: 整數
+              <em>(預設: 0)</em>
+            </h3>
           </div>
         </div>
       </section>
 
       <section class="set">
         <h2 class="set__heading">align-self</h2>
-        <p class="set__notes">設定單一元素的對齊方式</p>
+        <p class="set__notes">
+          設定單一元素在交叉軸上的對齊方式
+          <br />
+          auto 時，繼承 align-items 屬性或 stretch
+        </p>
         <div class="set__items">
           <div
             class="item item--alt-child-colors-1 item--container-align-self-unique js-item"
@@ -655,13 +704,14 @@
             </div>
 
             <h3 class="item__heading js-item-heading">
-              align-self: flex-start|flex-end|center|baseline|stretch
+              align-self: 同 align-items
+              <br />
+              <em>(預設: auto)</em>
             </h3>
           </div>
         </div>
       </section>
     </div>
-
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
